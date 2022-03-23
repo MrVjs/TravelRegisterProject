@@ -12,7 +12,7 @@ class TRSideMenu : UITableView, UITableViewDelegate, UITableViewDataSource {
     var currentVC : UIViewController!
     private var vc : UIViewController!
     lazy var menuVCs = [TRProfile.self,TRNotification.self,TRSetting.self,TRAbout.self]
-    private var names = ["Profile","Notifocation","Setting","About"]
+    private var names = ["Profile","Notification","Settings","About"]
     private var imgs = ["person.crop.circle","bell.fill","gear","info.circle"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
