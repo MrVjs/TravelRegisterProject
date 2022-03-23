@@ -14,7 +14,7 @@ class TRHome : UIViewController {
     lazy private var travelInfoLabel = labelCreator(text: " Travel Info ", size: 20, weight: .bold, noOfLines: 1)
     lazy private var noOfTravelLabel = labelCreator(text: "Total No of Tirp's", size: 20, weight: .thin, noOfLines: 2)
     lazy private var noOfTravels = labelCreator(text: "\(TRTripDataHandler.getNoOfTrip())", size: 39, weight: .regular, noOfLines: 1)
-    lazy private var lastTravelLocationLabel = labelCreator(text: "Last Tirp Location", size: 20, weight: .thin, noOfLines: 2)
+    lazy private var lastTravelLocationLabel = labelCreator(text: "Last Trip Location", size: 20, weight: .thin, noOfLines: 2)
     lazy private var lastTripLocation = labelCreator(text: "\(TRTripDataHandler.getLastTripLocation())", size: 39, weight: .regular, noOfLines: 1)
     lazy private var expenseInfoLabel = labelCreator(text: " Expense Info ", size: 20, weight: .bold, noOfLines: 1)
     lazy private var totalTripExpenseLabel = labelCreator(text: "Total Trip Expense's", size: 20, weight: .thin, noOfLines: 2)
