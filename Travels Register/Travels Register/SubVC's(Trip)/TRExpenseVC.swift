@@ -43,7 +43,9 @@ class TRExpenseVC : UIViewController {
     func placeSaveButton() {
         if isEditable {
             navigationItem.rightBarButtonItem = UIBarButtonItem.button(name : "Save", selector: #selector(save), view: self)
-            scrollView?.removeGestureRecognizer(toastTap)
+            if let tap = toastTap {
+                scrollView?.removeGestureRecognizer(tap)
+            }
         } else {
             navigationItem.rightBarButtonItem = UIBarButtonItem.button(name: "Edit", selector: #selector(edit), view: self)
             if let tap = toastTap {
