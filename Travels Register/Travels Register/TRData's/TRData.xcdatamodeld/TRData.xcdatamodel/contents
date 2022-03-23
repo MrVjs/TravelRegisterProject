@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TRActivityData" representedClassName="TRActivityData" syncable="YES">
+        <attribute name="activityName" optional="YES" attributeType="String"/>
+        <attribute name="cost" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateNtime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tripID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TRExpenseData" representedClassName="TRExpenseData" syncable="YES">
+        <attribute name="activityExpense" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="foodExpense" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="roomRentExpense" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tripID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vehicleExpense" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TRFriendsData" representedClassName="TRFriendsData" syncable="YES">
+        <attribute name="friendName" optional="YES" attributeType="String"/>
+        <attribute name="meetPlace" optional="YES" attributeType="String"/>
+        <attribute name="occupation" optional="YES" attributeType="String"/>
+        <attribute name="phoneNo" optional="YES" attributeType="String"/>
+        <attribute name="tripID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TRTripData" representedClassName="TRTripData" syncable="YES">
+        <attribute name="fromDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="locationType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String"/>
+        <attribute name="toDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tripID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="usedTransport" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="TRActivityData" positionX="-36" positionY="54" width="128" height="104"/>
+        <element name="TRExpenseData" positionX="-18" positionY="81" width="128" height="104"/>
+        <element name="TRFriendsData" positionX="-54" positionY="36" width="128" height="104"/>
+        <element name="TRTripData" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
